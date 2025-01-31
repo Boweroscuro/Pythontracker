@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Premi Disponibili</h1>
+    <div class="attivita-grid">
+        {% for premio in premi %}
+            <div class="attivita-card">
+                <h2>{{ premio.nome }}</h2>
+                <p><strong>Costo: {{ premio.punti }} punti</strong></p>
+                <form action="/riscatta_premio" method="post">
+                    <input type="hidden" name="premio" value="{{ premio.nome }}">
+                    <button type="submit" {% if g.punti_totali < premio.punti %}disabled{% endif %}>
+                        Riscatta
+                    </button>
+                </form>
+            </div>
+        {% else %}
+            <p>Non ci sono premi disponibili al momento.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

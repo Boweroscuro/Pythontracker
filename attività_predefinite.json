@@ -1,0 +1,54 @@
+{
+  "attivita": [
+      {
+          "nome": "Studia pdf",
+          "punti": 5,
+          "descrizione": "Studiato un pdf"
+      },
+      {
+          "nome": "Esercizi",
+          "punti": 5,
+          "descrizione": "Esercizi per l'esame"
+      },
+      {
+          "nome": "Esame passato",
+          "punti": 100,
+          "descrizione": "Passare un esame"
+      },
+      {
+          "nome": "Simulazione di esame",
+          "punti": 50,
+          "descrizione": "Passato simulazione esame"
+      },
+      {
+          "nome": "Videolezione",
+          "punti": 10,
+          "descrizione": "Seguire una videolezione"
+      },
+      {
+          "nome": "Esercitazione",
+          "punti": 30,
+          "descrizione": "Passato un esercitazione"
+      },
+      {
+          "nome": "Lavorare su un progetto",
+          "punti": 5,
+          "descrizione": "Lavorare almeno 1 ora ad un progetto (5 punti/ora)"
+      },
+      {
+          "nome": "Studiare Javascript",
+          "punti": 10,
+          "descrizione": "Studiare Javascript"
+      },
+      {
+          "nome": "Studiare",
+          "punti": 5,
+          "descrizione": "Studiare 5 punti/ora"
+      },
+      {
+          "nome": "Svuotare il cestino",
+          "punti": 10,
+          "descrizione": "LOL"
+      }
+  ]
+}

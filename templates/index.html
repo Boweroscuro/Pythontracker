@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-4">Dashboard Attività</h1>
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <div class="p-4 bg-primary text-white rounded shadow mx-3">
+            <h2 class="display-3">{{ dati_utente["punteggio_totale"] }}</h2>
+            <p class="lead">Punti Totali</p>
+        </div>
+        <div class="p-4 bg-success text-white rounded shadow mx-3">
+            <h2 class="display-3">{{ dati_utente["numero_attivita"] }}</h2>
+            <p class="lead">Attività Completate</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

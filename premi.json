@@ -1,0 +1,9 @@
+{
+  "premi": [
+      {"nome": "Buono 10", "punti": 100},
+      {"nome": "Buono 20", "punti": 200},
+      {"nome": "Buono 30", "punti": 300},
+      {"nome": "Buono 40", "punti": 400},
+      {"nome": "Buono 50", "punti": 500}
+  ]
+}

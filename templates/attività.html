@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Attività Predefinite</h1>
+    <div class="attivita-grid">
+        {% for attivita in attività %}
+            <div class="attivita-card">
+                <h2>{{ attivita.nome }}</h2>
+                <p>{{ attivita.descrizione }}</p>
+                <p><strong>{{ attivita.punti }} punti</strong></p>
+                <form action="/aggiungi_attività" method="post">
+                    <input type="hidden" name="attività" value="{{ attivita.nome }}">
+                    <button type="submit">Aggiungi</button>
+                </form>
+            </div>
+        {% else %}
+            <p>Non ci sono attività disponibili al momento.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
